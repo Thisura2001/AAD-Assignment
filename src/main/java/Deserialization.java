@@ -9,7 +9,7 @@ public class Deserialization {
         try(FileInputStream fileInputStream = new FileInputStream("Student.ser")) {
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
             student = (Student) objectInputStream.readObject();
-            System.out.println("Object deserialized successfully");
+            System.out.println("Object deserialized successfully"+"\n"+student);
 
         } catch (Exception e) {
             throw new RuntimeException(e);

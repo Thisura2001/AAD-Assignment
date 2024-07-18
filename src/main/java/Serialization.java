@@ -8,7 +8,7 @@ public class Serialization {
         try ( FileOutputStream fileOutputStream = new FileOutputStream("student.ser")){
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
             objectOutputStream.writeObject(student);
-            System.out.println("Object serialized successfully");
+            System.out.println("Object serialized successfully"+"\n"+student);
 
         }catch (Exception e){
             throw new RuntimeException(e);
